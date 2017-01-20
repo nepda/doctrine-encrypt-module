@@ -19,8 +19,8 @@
     "require": {
         "doctrine/doctrine-module": "0.*",
         "nepda/doctrine-encrypt" : "~6.0",
-        "php": ">=5.3",
-        "zendframework/zend-crypt": "~2.6"
+        "php": ">=7.0",
+        "zendframework/zend-crypt": "~2.5"
     },
     "autoload": {
         "psr-0": {
