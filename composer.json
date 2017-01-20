@@ -1,5 +1,5 @@
 {
-    "name": "51systems/doctrine-encrypt-module",
+    "name": "nepda/doctrine-encrypt-module",
     "description": "ZF2 Module for Doctrine2 field encryption",
     "type": "library",
     "license": "MIT",
@@ -9,7 +9,7 @@
         "Doctrine",
         "Encryption"
     ],
-    "homepage": "https://github.com/51systems/doctrine-encrypt-module",
+    "homepage": "https://github.com/nepda/doctrine-encrypt-module",
     "authors": [
         {
             "name": "Dustin Thomson",
@@ -17,10 +17,10 @@
         }
     ],
     "require": {
-        "php": ">=5.3",
-        "zendframework/zend-crypt": ">=2.2",
         "doctrine/doctrine-module": "0.*",
-        "51systems/doctrine-encrypt" : "~5.0"
+        "nepda/doctrine-encrypt" : "~6.0",
+        "php": ">=5.3",
+        "zendframework/zend-crypt": "~2.6"
     },
     "autoload": {
         "psr-0": {
