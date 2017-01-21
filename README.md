@@ -2,11 +2,11 @@
 Package adds Doctrine Module support to doctrine-encrypt module
 
 ## Installation
-Add `51systems/doctrine-encrypt-module` to your composer manifest.
+Add `nepda/doctrine-encrypt-module` to your composer manifest.
 ```js
 {
     "require": {
-        "51systems/doctrine-encrypt-module": "1.*"
+        "nepda/doctrine-encrypt-module": "1.*"
     }
 }
 ```
@@ -28,4 +28,4 @@ or implement `DoctrineEncrypt\Encryptors\EncryptorInterface`. References to othe
 or FQN's are also acceptable.
 
 ## Usage
-See https://github.com/51systems/doctrine-encrypt
+See https://github.com/nepda/doctrine-encrypt
