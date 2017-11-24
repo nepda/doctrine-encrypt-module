@@ -1,11 +1,11 @@
 <phpunit
-    bootstrap="./tests/Bootstrap.php"
+    bootstrap="Bootstrap.php"
     colors="true"
     backupGlobals="false"
 >
     <testsuites>
         <testsuite name="DoctrineEncryptModule Test Suite">
-            <directory>./tests/DoctrineEncryptModuleTest</directory>
+            <directory>DoctrineEncryptModuleTest</directory>
         </testsuite>
     </testsuites>
     <filter>
