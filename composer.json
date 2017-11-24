@@ -18,7 +18,7 @@
   ],
   "require": {
     "doctrine/doctrine-orm-module": "1.1.5",
-    "nepda/doctrine-encrypt": "7.0.1",
+    "nepda/doctrine-encrypt-module": "^7.0.1",
     "php": ">=7.1",
     "zendframework/zend-crypt": "~2.5|~3.0"
   },
