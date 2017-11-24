@@ -1,33 +1,38 @@
 {
-    "name": "nepda/doctrine-encrypt-module",
-    "description": "ZF2 Module for Doctrine2 field encryption",
-    "type": "library",
-    "license": "MIT",
-    "keywords": [
-        "ZF2",
-        "Zend",
-        "Doctrine",
-        "Encryption"
-    ],
-    "homepage": "https://github.com/nepda/doctrine-encrypt-module",
-    "authors": [
-        {
-            "name": "Dustin Thomson",
-            "email": "dthomson@51systems.com"
-        }
-    ],
-    "require": {
-        "doctrine/doctrine-module": "0.*",
-        "nepda/doctrine-encrypt" : "~6.0",
-        "php": ">=7.0",
-        "zendframework/zend-crypt": "~2.5"
+  "name": "nepda/doctrine-encrypt-module",
+  "description": "ZF2 Module for Doctrine2 field encryption",
+  "type": "library",
+  "license": "MIT",
+  "keywords": [
+    "ZF2",
+    "Zend",
+    "Doctrine",
+    "Encryption"
+  ],
+  "homepage": "https://github.com/nepda/doctrine-encrypt-module",
+  "authors": [
+    {
+      "name": "Dustin Thomson",
+      "email": "dthomson@51systems.com"
+    }
+  ],
+  "require": {
+    "doctrine/doctrine-module": "~2.0",
+    "nepda/doctrine-encrypt": "~7.0.1",
+    "php": ">=7.1",
+    "zendframework/zend-crypt": "~2.5|~3.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.*"
+  },
+  "autoload": {
+    "psr-0": {
+      "DoctrineEncryptModule": "src/"
     },
-    "autoload": {
-        "psr-0": {
-            "DoctrineEncryptModule": "src/"
-        },
-        "classmap" : ["Module.php"]
-    },
-    "bin": [
+    "classmap": [
+      "Module.php"
     ]
+  },
+  "bin": [
+  ]
 }

@@ -7,7 +7,6 @@ use PHPUnit_Framework_TestCase as BaseTestCase;
 use DoctrineEncrypt\Encryptors\AES256Encryptor;
 use DoctrineEncrypt\Subscribers\DoctrineEncryptSubscriber;
 use Zend\ServiceManager\ServiceManager;
-use DoctrineModuleTest\Service\TestAsset\DummyEventSubscriber;
 
 /**
  * Base test case to be used when a service manager instance is required

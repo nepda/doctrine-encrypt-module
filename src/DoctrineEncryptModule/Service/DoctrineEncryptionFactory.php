@@ -37,6 +37,14 @@ class DoctrineEncryptionFactory extends AbstractFactory
     }
 
     /**
+     * {@inheritdoc}
+     */
+    public function __invoke(\Interop\Container\ContainerInterface $container, $requestedName, array $options = null)
+    {
+        return $this->createService($container);
+    }
+
+    /**
      * Get the class name of the options associated with this factory.
      *
      * @return string

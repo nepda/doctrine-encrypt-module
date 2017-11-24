@@ -2,20 +2,14 @@
 
 namespace DoctrineEncryptModule\Factory;
 
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
-
-class McryptAdapter implements FactoryInterface
+class McryptAdapter implements \Zend\ServiceManager\Factory\FactoryInterface
 {
     /**
-     * Create service
-     *
-     * @param ServiceLocatorInterface $serviceLocator
-     * @return mixed
+     * {@inheritdoc}
      */
-    public function createService(ServiceLocatorInterface $serviceLocator)
+    public function __invoke(\Interop\Container\ContainerInterface $container, $requestedName, array $options = null)
     {
-        $config = $serviceLocator->get('Config');
+        $config = $container->get('Config');
 
         if (empty($config['doctrine']['encryption']['key'])) {
             throw new \InvalidArgumentException('You need to define a non-empty key in doctrine.encryption.key config');

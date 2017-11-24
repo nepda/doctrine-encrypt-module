@@ -17,8 +17,6 @@
  * <http://www.doctrine-project.org>.
  */
 
-use \DoctrineModuleTest\ServiceManagerTestCase;
-
 ini_set('error_reporting', E_ALL);
 
 $files = array(__DIR__ . '/../vendor/autoload.php', __DIR__ . '/../../../autoload.php');
@@ -44,5 +42,5 @@ if (file_exists(__DIR__ . '/TestConfiguration.php')) {
     $config = require __DIR__ . '/TestConfiguration.php.dist';
 }
 
-ServiceManagerTestCase::setConfiguration($config);
-unset($files, $file, $loader, $config);
+#ServiceManagerTestCase::setConfiguration($config);
+#unset($files, $file, $loader, $config);
