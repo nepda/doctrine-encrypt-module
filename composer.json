@@ -14,11 +14,15 @@
     {
       "name": "Dustin Thomson",
       "email": "dthomson@51systems.com"
+    },
+    {
+      "name": "Nepomuk Fraedrich",
+      "email": "info@nepda.eu"
     }
   ],
   "require": {
-    "doctrine/doctrine-orm-module": "1.1.5",
-    "nepda/doctrine-encrypt-module": "^7.0.1",
+    "doctrine/doctrine-orm-module": "1.1.*",
+    "51systems/doctrine-encrypt": "6.0.*",
     "php": ">=7.1",
     "zendframework/zend-crypt": "~2.5|~3.0"
   },
@@ -32,7 +36,5 @@
     "classmap": [
       "Module.php"
     ]
-  },
-  "bin": [
-  ]
+  }
 }
